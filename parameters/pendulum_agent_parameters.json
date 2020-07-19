@@ -1,0 +1,16 @@
+{
+  "gamma":	0.95,
+  "n_steps": 5,
+  
+  "optimizer": {"lr":5e-4, "eps":1e-4},
+  "lr_scheduler": {"period":400, "lower":0.02, "delay":5, "warm_up_epochs":5, "initial_ratio":0.1},
+
+  "gradient_clipping":0.5,
+
+  "V_loss_coef":  1,
+  "pi_loss_coef": 0.5,
+
+  "entropy_coef": 5e-2,
+  
+  "batch_size":256
+}
